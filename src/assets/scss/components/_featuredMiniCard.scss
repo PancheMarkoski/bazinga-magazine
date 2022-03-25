@@ -1,0 +1,97 @@
+.featuredMiniCard {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .featuredMiniCard__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0, 0, 0, 0.02) 60%);
+        width: 100%;
+        height: 66%;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        align-items: start;
+        padding: 31px 25px;
+        transition: ease-in 0.3s;
+    &:hover {
+        background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0, 0, 0, 0) 59%);
+        cursor: pointer;
+    }
+
+            .featuredMiniCard__category {
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                bottom: 0;
+                &-cat {
+                    background-color: $navLinkHoverColor;
+                    width: 51.33px;
+                    height: 27px;
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    font-family: $quicksand ,sans-serif;
+                    font-size: 11px;
+                    font-weight: 700;
+                    align-items: center;
+
+                }
+
+                &-post {
+                    display: flex;
+                    width: 39px;
+                    height: 27px;
+                    background-color: $sidebarBg;
+                    cursor: pointer;
+                    svg {
+                        width: 80%;
+                        height: 80%;
+                        margin: auto;
+                    }
+                }
+            }
+    }
+    .featuredMiniCard__image {
+        width: 100%;
+        height: 66%;
+    }
+
+    .featuredMiniCard__content {
+        padding:  20px;
+        margin: auto;
+        height: 34%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .featuredMiniCard__title {
+            font-size: 24px;
+            font-family: $catamaran;
+            color: #0f1214;
+            letter-spacing: -1px;
+            font-weight: 700;
+            line-height: 1.12em;
+            transition: all 0.2s;
+
+            &:hover {
+                color: #555759;
+                cursor: pointer;
+            }
+
+        }
+
+        .featuredMiniCard__auth-date {
+            font-size: 13px;
+            font-family: $quicksand;
+            color: #898989;
+            font-weight: 500;
+        }
+    }
+
+}

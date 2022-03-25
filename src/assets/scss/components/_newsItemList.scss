@@ -1,0 +1,66 @@
+.newsItemList {
+
+    position: relative;
+    flex: 1;
+    z-index: 3;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+    &-overlay {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.45s;
+        padding: 20px;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &__category {
+
+                color: #fff;
+                padding: 0 0 15px 0;
+
+                &-inner {
+                    background-color: $navLinkHoverColor;
+                    height: 27px;
+                    padding: 6px 11px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    font-family: $quicksand;
+
+                    &:hover {
+                        color: #ffffffcc;
+                        cursor: pointer;
+                    }
+
+                }
+
+            }
+
+            &__title {
+                font-family: $catamaran;
+                font-size: 19px;
+                font-weight: 700;
+                line-height: 1.1em;
+                color: #fff;
+
+                &:hover {
+                    color: #ffffffcc;
+                    cursor: pointer;
+                }
+
+            }
+
+    }
+}

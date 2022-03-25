@@ -1,0 +1,30 @@
+.navLink {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &-link {
+        padding: 15px 19.5px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.75px;
+        color: $navLinkColor;
+        transition: 0.3s;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &:hover {
+            color: $navLinkHoverColor;
+        }
+    }
+
+    .isActive {
+        color: red;
+    }
+
+    svg {
+        position: absolute;
+        right: 0;
+    }
+
+}

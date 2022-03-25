@@ -1,0 +1,85 @@
+.featuredCard {
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+    .featuredCard__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0, 0, 0, 0.02) 60%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        align-items: start;
+        padding: 31px 25px;
+        transition: ease-in 0.3s;
+    &:hover {
+        background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0, 0, 0, 0) 59%);
+        cursor: pointer;
+    }
+
+            .featuredCard__category {
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                margin: 0 0 11px 0;
+                &-cat {
+                    background-color: $navLinkHoverColor;
+                    width: 51.33px;
+                    height: 27px;
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    font-family: $quicksand ,sans-serif;
+                    font-size: 11px;
+                    font-weight: 700;
+                    align-items: center;
+
+                }
+
+                &-post {
+                    display: flex;
+                    width: 39px;
+                    height: 27px;
+                    background-color: $sidebarBg;
+                    cursor: pointer;
+                    svg {
+                        width: 80%;
+                        height: 80%;
+                        margin: auto;
+                    }
+                }
+            }
+
+            .featuredCard__title {
+                color: #ffffff;            
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: -0.8px;
+                line-height: 0.95em;
+                margin: 0 0 0.3em;
+                font-family: $catamaran ,sans-serif;
+                cursor: pointer;
+                &:hover {
+                    color: $postTitleColor;
+                    opacity: 0.8;
+
+                }     
+            }
+
+            .featuredCard__auth-date {
+                display: flex;
+                align-items: center;    
+                color: #ffffff;     
+                
+            }
+    }
+    .featuredCard__image {
+        width: 100%;
+        height: 100%;
+    }
+
+}

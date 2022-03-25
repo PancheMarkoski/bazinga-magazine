@@ -1,0 +1,127 @@
+.navigation {
+    width: 100vw;
+    &-container {
+        width: 85%;
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+
+        &-ham-menu {
+            flex: 2;
+            display: flex;
+            svg {
+                width: 23px;
+                height: 23px;
+                cursor: pointer;
+            }
+
+        }
+
+        &-menu-links {
+            flex: 8;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+        }
+
+        &-search {
+            flex: 2;
+            text-align: right;
+            display: flex;
+            justify-content: end;
+            svg {
+                width: 23px;
+                height: 23px;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+
+
+}
+
+.navigationTablet {
+    display: flex;
+    width: 100vw;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+
+    &-logo {
+        width: 199.55px;
+        padding: 0 10px;
+    }
+
+    &-container-tablet {
+        display: flex;
+        width: 268.33px;
+        padding: 0 10px;
+        justify-content: end;
+    }
+
+    &-shop-cart {
+        margin: 0 0 0 10px;
+
+        font-size: 14px;
+        position: relative;
+        text-align: left;
+        svg {
+            width: 19px;
+            height: 21px;
+            cursor: pointer;
+        }
+        span {
+            position: absolute;
+            top: 30%;
+            left: 40%;
+            background-color: $shopCartColor;
+            font-size: 12px;
+            width: 19px;
+            border-radius: 45%;
+            font-weight: 700;
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+    &-search {
+        margin: 0 0 0 10px;
+        width: 25px;
+        height: 25px;
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-hamMenu {
+        svg {
+            width: 21px;
+            height: 24px;
+        }
+    }
+
+    @media only screen and (max-width: $mobileScreen) {
+
+        &-container-tablet {
+
+            width: 155px;
+
+        }
+
+        &-logo {
+            
+            width: 125px;
+
+            img {
+                width: 100px;
+            }
+
+        }       
+    }
+
+}

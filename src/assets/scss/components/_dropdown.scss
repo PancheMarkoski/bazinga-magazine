@@ -1,0 +1,53 @@
+.dropdown {
+    background-color: #ffffff;
+    position:absolute;
+    width: 232.4px;
+    padding: 0.85em 1.5rem;
+    opacity: 0;
+    transition: 0.2s step-end;
+    pointer-events: none;
+    left: 0;
+    top: 80%;
+    font-family: $quicksand;
+    font-size: 14px;
+    line-height: 1.5em;
+    box-shadow: 0 0 10px 0 #f0f0f0;
+    z-index: 33;
+            
+                li {
+                    border-bottom: 1px solid #89898923;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    .dropdown-link {
+                        margin: 0 auto;
+                        text-transform: capitalize;
+                        color: $subNavLinkColor;
+                        height: 44.32px;
+                        width: 200px;
+                        display: flex;
+                        align-items: center;
+                        
+                        &:hover {
+                            color: $navLinkHoverColor;
+                        }
+
+                    }
+
+                    .active {
+                        color: red;
+                    }
+        
+                }
+            
+}
+
+.dropdown--open {
+    opacity: 1;
+    transition: 0.5s ease-in;
+    pointer-events: auto;
+
+}
+
